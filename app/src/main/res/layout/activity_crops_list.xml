@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CropsListActivity"
+    android:background="@color/background_color" >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="300dp"
+        android:layout_height="220dp"
+        android:src="@drawable/logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBaseline_toTopOf="parent"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/crops_spring"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="Spring"
+        android:layout_margin="10dp"
+        android:textSize="25sp"
+        android:textColor="@color/txt_color"
+        android:background="@color/btn_color"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/crops_summer"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="Summer"
+        android:layout_margin="10dp"
+        android:textSize="25sp"
+        android:textColor="@color/txt_color"
+        android:background="@color/btn_color"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/crops_spring" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/crops_fall"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="Fall"
+        android:layout_margin="10dp"
+        android:textSize="25sp"
+        android:textColor="@color/txt_color"
+        android:background="@color/btn_color"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/crops_summer" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/crops_winter"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="Winter"
+        android:layout_margin="10dp"
+        android:textSize="25sp"
+        android:textColor="@color/txt_color"
+        android:background="@color/btn_color"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/crops_fall" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
