@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StardewValleyGuide">
         <activity
+            android:name=".SummerCropsListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Crop"
+            android:exported="false" />
+        <activity
+            android:name=".SpringCropsListActivity"
+            android:exported="false" />
+        <activity
             android:name=".CropsListActivity"
             android:exported="false" />
         <activity
