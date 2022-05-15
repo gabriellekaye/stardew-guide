@@ -19,7 +19,7 @@ class SpringCropsListActivity : AppCompatActivity() {
             val goToCrop1 = Intent(this, Crop::class.java)
             val bundle = Bundle()
 
-            bundle.putInt("img", R.drawable.Blue_Jazz)
+            bundle.putInt("img", R.drawable.bluejazz)
             bundle.putString("name", "Blue Jazz")
             bundle.putString("growTime","7 days")
             bundle.putString("regrowth", "No")

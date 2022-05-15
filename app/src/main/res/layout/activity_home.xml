@@ -79,27 +79,40 @@
         android:textSize="25sp"
         android:background="@color/btn_color" />
 
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/fishing_tutorial_btn"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/plant_tutorial_btn"-->
+<!--        android:text="Fishing"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:textColor="@color/txt_color"-->
+<!--        android:textSize="25sp"-->
+<!--        android:background="@color/btn_color" />-->
+
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/forage_tutorial_btn"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/fishing_tutorial_btn"-->
+<!--        android:text="Foraging"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:textColor="@color/txt_color"-->
+<!--        android:textSize="25sp"-->
+<!--        android:background="@color/btn_color" />-->
+
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/fishing_tutorial_btn"
+        android:id="@+id/crops_btn"
         android:layout_width="300dp"
         android:layout_height="50dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/plant_tutorial_btn"
-        android:text="Fishing"
-        android:layout_margin="10dp"
-        android:textColor="@color/txt_color"
-        android:textSize="25sp"
-        android:background="@color/btn_color" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/forage_tutorial_btn"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fishing_tutorial_btn"
-        android:text="Foraging"
+        android:text="crops list"
         android:layout_margin="10dp"
         android:textColor="@color/txt_color"
         android:textSize="25sp"

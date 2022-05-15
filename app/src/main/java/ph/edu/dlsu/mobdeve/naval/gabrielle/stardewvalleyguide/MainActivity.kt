@@ -1,5 +1,6 @@
 package ph.edu.dlsu.mobdeve.naval.gabrielle.stardewvalleyguide
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import ph.edu.dlsu.mobdeve.naval.gabrielle.stardewvalleyguide.databinding.ActivityMainBinding
@@ -12,5 +13,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.homeBtn.setOnClickListener {
+            val goToHome = Intent(this, HomeActivity::class.java)
+            startActivity(goToHome)
+        }
     }
 }
