@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StardewValleyGuide">
         <activity
+            android:name=".Forageable"
+            android:exported="false" />
+        <activity
+            android:name=".ForageListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FallCropsListActivity"
+            android:exported="false" />
+        <activity
             android:name=".SummerCropsListActivity"
             android:exported="false" />
         <activity

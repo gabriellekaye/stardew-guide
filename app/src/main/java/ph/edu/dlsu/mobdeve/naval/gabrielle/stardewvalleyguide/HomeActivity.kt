@@ -25,4 +25,9 @@ class HomeActivity : AppCompatActivity() {
     }
 
 
+        binding.cropsBtn.setOnClickListener {
+            val goToCropsList = Intent(this, CropsListActivity::class.java)
+            startActivity(goToCropsList)
+        }
+    }
 }

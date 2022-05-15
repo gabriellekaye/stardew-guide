@@ -19,5 +19,17 @@ class CropsListActivity : AppCompatActivity() {
             val goToSpringCrops = Intent(this, SpringCropsListActivity::class.java)
             startActivity(goToSpringCrops) //go to spring crops list
         }
+
+        //Summer
+        binding.cropsSummer.setOnClickListener{
+            val goToSummerCrops = Intent(this, SummerCropsListActivity::class.java)
+            startActivity(goToSummerCrops)
+        }
+
+        //Fall
+        binding.cropsFall.setOnClickListener {
+            val goToFallCrops = Intent(this, FallCropsListActivity::class.java)
+            startActivity(goToFallCrops)
+        }
     }
 }

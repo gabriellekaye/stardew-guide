@@ -5,9 +5,14 @@
       <map>
         <entry key="..\:/Users/isid_/Desktop/MOBDEVE/StardewValleyGuide/app/src/main/res/layout/activity_crop.xml" value="0.22" />
         <entry key="..\:/Users/isid_/Desktop/MOBDEVE/StardewValleyGuide/app/src/main/res/layout/activity_crops_list.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/isid_/Desktop/MOBDEVE/StardewValleyGuide/app/src/main/res/layout/activity_fall_crops_list.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/isid_/Desktop/MOBDEVE/StardewValleyGuide/app/src/main/res/layout/activity_forage_list.xml" value="0.11865942028985507" />
+        <entry key="..\:/Users/isid_/Desktop/MOBDEVE/StardewValleyGuide/app/src/main/res/layout/activity_forageable.xml" value="0.11865942028985507" />
+        <entry key="..\:/Users/isid_/Desktop/MOBDEVE/StardewValleyGuide/app/src/main/res/layout/activity_foraging.xml" value="0.14666666666666667" />
         <entry key="..\:/Users/isid_/Desktop/MOBDEVE/StardewValleyGuide/app/src/main/res/layout/activity_home.xml" value="0.14666666666666667" />
         <entry key="..\:/Users/isid_/Desktop/MOBDEVE/StardewValleyGuide/app/src/main/res/layout/activity_list.xml" value="0.22" />
         <entry key="..\:/Users/isid_/Desktop/MOBDEVE/StardewValleyGuide/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/isid_/Desktop/MOBDEVE/StardewValleyGuide/app/src/main/res/layout/activity_spring_crops_list.xml" value="0.1" />
         <entry key="..\:/Users/isid_/Desktop/MOBDEVE/StardewValleyGuide/app/src/main/res/layout/activity_summer_crops_list.xml" value="0.1" />
       </map>
     </option>
