@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_color"
-    tools:context=".FallCropsListActivity">
+    tools:context=".SpringForageListActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -24,164 +24,140 @@
             app:layout_constraintBaseline_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/crop1"
+            android:id="@+id/f1"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:text="Amaranth"
+            android:text="Common Mushroom"
+            android:gravity="center"
             android:layout_margin="10dp"
             android:textSize="25sp"
             android:textColor="@color/txt_color"
             android:background="@color/btn_color"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
-            android:drawableLeft="@drawable/amaranth"
+            android:drawableLeft="@drawable/commonmushroom"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/logo" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/crop2"
+            android:id="@+id/f2"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:text="Artichoke"
+            android:text="Daffodil"
+            android:gravity="center"
             android:layout_margin="10dp"
             android:textSize="25sp"
             android:textColor="@color/txt_color"
             android:background="@color/btn_color"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
-            android:drawableLeft="@drawable/artichoke"
+            android:drawableLeft="@drawable/daffodil"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/crop1" />
+            app:layout_constraintTop_toBottomOf="@id/f1" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/crop3"
+            android:id="@+id/f3"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:text="Beet"
+            android:text="Dandelion"
+            android:gravity="center"
             android:layout_margin="10dp"
             android:textSize="25sp"
             android:textColor="@color/txt_color"
             android:background="@color/btn_color"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
-            android:drawableLeft="@drawable/beet"
+            android:drawableLeft="@drawable/dandelion"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/crop2" />
+            app:layout_constraintTop_toBottomOf="@id/f2" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/crop4"
+            android:id="@+id/f4"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:text="Bok Choy"
+            android:text="Leek"
+            android:gravity="center"
             android:layout_margin="10dp"
             android:textSize="25sp"
             android:textColor="@color/txt_color"
             android:background="@color/btn_color"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
-            android:drawableLeft="@drawable/bokchoy"
+            android:drawableLeft="@drawable/leek"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/crop3" />
+            app:layout_constraintTop_toBottomOf="@id/f3" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/crop5"
+            android:id="@+id/f5"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:text="Cranberries"
+            android:text="Morel"
+            android:gravity="center"
             android:layout_margin="10dp"
             android:textSize="25sp"
             android:textColor="@color/txt_color"
             android:background="@color/btn_color"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
-            android:drawableLeft="@drawable/cranberries"
+            android:drawableLeft="@drawable/morel"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/crop4" />
+            app:layout_constraintTop_toBottomOf="@id/f4" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/crop6"
+            android:id="@+id/f6"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:text="Eggplant"
+            android:text="Salmonberry"
+            android:gravity="center"
             android:layout_margin="10dp"
             android:textSize="25sp"
             android:textColor="@color/txt_color"
             android:background="@color/btn_color"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
-            android:drawableLeft="@drawable/eggplant"
+            android:drawableLeft="@drawable/salmonberry"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/crop5" />
+            app:layout_constraintTop_toBottomOf="@id/f5" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/crop7"
+            android:id="@+id/f7"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:text="Fairy Rose"
+            android:text="Spring Onion"
+            android:gravity="center"
             android:layout_margin="10dp"
             android:textSize="25sp"
             android:textColor="@color/txt_color"
             android:background="@color/btn_color"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
-            android:drawableLeft="@drawable/fairyrose"
+            android:drawableLeft="@drawable/springonion"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/crop6" />
+            app:layout_constraintTop_toBottomOf="@id/f6" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/crop8"
+            android:id="@+id/f8"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:text="Grape"
+            android:text="Wild Horseradish"
+            android:gravity="center"
             android:layout_margin="10dp"
             android:textSize="25sp"
             android:textColor="@color/txt_color"
             android:background="@color/btn_color"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
-            android:drawableLeft="@drawable/grapes"
+            android:drawableLeft="@drawable/wildhorseradish"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/crop7" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/crop9"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:text="Pumpkin"
-            android:layout_margin="10dp"
-            android:textSize="25sp"
-            android:textColor="@color/txt_color"
-            android:background="@color/btn_color"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:drawableLeft="@drawable/pumpkin"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/crop8" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/crop10"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:text="Yam"
-            android:layout_margin="10dp"
-            android:textSize="25sp"
-            android:textColor="@color/txt_color"
-            android:background="@color/btn_color"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:drawableLeft="@drawable/yam"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/crop9" />
+            app:layout_constraintTop_toBottomOf="@id/f7" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

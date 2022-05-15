@@ -15,19 +15,19 @@ class CropsListActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         //Spring crops list
-        binding.cropsSpring.setOnClickListener{
+        binding.spring.setOnClickListener{
             val goToSpringCrops = Intent(this, SpringCropsListActivity::class.java)
             startActivity(goToSpringCrops) //go to spring crops list
         }
 
         //Summer
-        binding.cropsSummer.setOnClickListener{
+        binding.summer.setOnClickListener{
             val goToSummerCrops = Intent(this, SummerCropsListActivity::class.java)
             startActivity(goToSummerCrops)
         }
 
         //Fall
-        binding.cropsFall.setOnClickListener {
+        binding.fall.setOnClickListener {
             val goToFallCrops = Intent(this, FallCropsListActivity::class.java)
             startActivity(goToFallCrops)
         }
