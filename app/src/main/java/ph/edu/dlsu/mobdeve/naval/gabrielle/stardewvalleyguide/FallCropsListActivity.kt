@@ -20,6 +20,7 @@ class FallCropsListActivity : AppCompatActivity() {
             val bundle = Bundle()
 
             bundle.putInt("img", R.drawable.amaranth)
+            bundle.putString("season", "Fall")
             bundle.putString("name", "Amaranth")
             bundle.putString("growTime","7 days")
             bundle.putString("regrowth", "No")
@@ -36,6 +37,7 @@ class FallCropsListActivity : AppCompatActivity() {
             val bundle = Bundle()
 
             bundle.putInt("img", R.drawable.artichoke)
+            bundle.putString("season", "Fall")
             bundle.putString("name", "Artichoke")
             bundle.putString("growTime","8 days")
             bundle.putString("regrowth", "No")
@@ -52,6 +54,7 @@ class FallCropsListActivity : AppCompatActivity() {
             val bundle = Bundle()
 
             bundle.putInt("img", R.drawable.beet)
+            bundle.putString("season", "Fall")
             bundle.putString("name", "Beet")
             bundle.putString("growTime","6 days")
             bundle.putString("regrowth", "No")
@@ -68,6 +71,7 @@ class FallCropsListActivity : AppCompatActivity() {
             val bundle = Bundle()
 
             bundle.putInt("img", R.drawable.bokchoy)
+            bundle.putString("season", "Fall")
             bundle.putString("name", "Bok Choy")
             bundle.putString("growTime","4 days")
             bundle.putString("regrowth", "No")
@@ -84,6 +88,7 @@ class FallCropsListActivity : AppCompatActivity() {
             val bundle = Bundle()
 
             bundle.putInt("img", R.drawable.cranberries)
+            bundle.putString("season", "Fall")
             bundle.putString("name", "Cranberries")
             bundle.putString("growTime","7 days")
             bundle.putString("regrowth", "5 days")
@@ -100,6 +105,7 @@ class FallCropsListActivity : AppCompatActivity() {
             val bundle = Bundle()
 
             bundle.putInt("img", R.drawable.eggplant)
+            bundle.putString("season", "Fall")
             bundle.putString("name", "Eggplant")
             bundle.putString("growTime","5 days")
             bundle.putString("regrowth", "5 days")
@@ -116,6 +122,7 @@ class FallCropsListActivity : AppCompatActivity() {
             val bundle = Bundle()
 
             bundle.putInt("img", R.drawable.fairyrose)
+            bundle.putString("season", "Fall")
             bundle.putString("name", "Fairy Rose")
             bundle.putString("growTime","12 days")
             bundle.putString("regrowth", "No")
@@ -132,6 +139,7 @@ class FallCropsListActivity : AppCompatActivity() {
             val bundle = Bundle()
 
             bundle.putInt("img", R.drawable.grapes)
+            bundle.putString("season", "Fall")
             bundle.putString("name", "Grape")
             bundle.putString("growTime","10 days")
             bundle.putString("regrowth", "3 days")
@@ -148,6 +156,7 @@ class FallCropsListActivity : AppCompatActivity() {
             val bundle = Bundle()
 
             bundle.putInt("img", R.drawable.pumpkin)
+            bundle.putString("season", "Fall")
             bundle.putString("name", "Pumpkin")
             bundle.putString("growTime","13 days")
             bundle.putString("regrowth", "No")
@@ -164,6 +173,7 @@ class FallCropsListActivity : AppCompatActivity() {
             val bundle = Bundle()
 
             bundle.putInt("img", R.drawable.yam)
+            bundle.putString("season", "Fall")
             bundle.putString("name", "Yam")
             bundle.putString("growTime","10 days")
             bundle.putString("regrowth", "No")

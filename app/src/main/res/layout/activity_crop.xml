@@ -11,12 +11,12 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="50dp" >
+        android:paddingBottom="50dp">
 
         <ImageView
             android:id="@+id/logo"
-            android:layout_width="300dp"
-            android:layout_height="220dp"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
             android:src="@drawable/logo"
             android:contentDescription="@string/logo"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -148,7 +148,7 @@
             android:textSize="27sp"
             android:textColor="@color/txt_color"
             android:layout_width="170dp"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toLeftOf="@id/pierrePrice"
             app:layout_constraintTop_toBottomOf="@id/sellPrice1" />
@@ -184,7 +184,7 @@
             android:textColor="@color/txt_color"
             android:layout_width="200dp"
             android:layout_height="40dp"
-            app:layout_constraintLeft_toRightOf="@id/sellPrice1"
+            app:layout_constraintLeft_toRightOf="@id/jojaPrice1"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/pierrePrice" />
 
