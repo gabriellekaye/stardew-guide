@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,179 +8,186 @@
     android:background="@color/background_color"
     tools:context=".Crop">
 
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="300dp"
-        android:layout_height="220dp"
-        android:src="@drawable/logo"
-        android:contentDescription="@string/logo"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBaseline_toTopOf="parent"
-        />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dp" >
 
-    <ImageView
-        android:id="@+id/img"
-        android:layout_width="110dp"
-        android:layout_height="150dp"
-        android:src="@drawable/strawberry"
-        android:contentDescription="@string/logo"
-        android:layout_marginLeft="30dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/name"
-        app:layout_constraintTop_toBottomOf="@id/logo" />
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="300dp"
+            android:layout_height="220dp"
+            android:src="@drawable/logo"
+            android:contentDescription="@string/logo"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBaseline_toTopOf="parent"
+            />
 
-    <TextView
-        android:id="@+id/name"
-        android:text="@string/holder"
-        android:textAlignment="center"
-        android:textSize="30sp"
-        android:textColor="@color/txt_color"
-        android:layout_width="250dp"
-        android:layout_height="150dp"
-        android:padding="50dp"
-        android:includeFontPadding="true"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toRightOf="@id/img"
-        app:layout_constraintTop_toBottomOf="@id/logo" />
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="110dp"
+            android:layout_height="150dp"
+            android:src="@drawable/strawberry"
+            android:contentDescription="@string/logo"
+            android:layout_marginLeft="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/name"
+            app:layout_constraintTop_toBottomOf="@id/logo" />
 
-    <TextView
-        android:id="@+id/season1"
-        android:text="@string/season"
-        android:textSize="27sp"
-        android:textColor="@color/txt_color"
-        android:layout_width="170dp"
-        android:layout_height="40dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/season"
-        app:layout_constraintTop_toBottomOf="@id/img" />
+        <TextView
+            android:id="@+id/name"
+            android:text="@string/holder"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textColor="@color/txt_color"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:gravity="center"
+            android:includeFontPadding="true"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/img"
+            app:layout_constraintTop_toBottomOf="@id/logo" />
 
-    <TextView
-        android:id="@+id/season"
-        android:text="@string/holder"
-        android:textAlignment="center"
-        android:textSize="27sp"
-        android:textColor="@color/txt_color"
-        android:layout_width="200dp"
-        android:layout_height="40dp"
-        app:layout_constraintLeft_toRightOf="@id/season1"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/name" />
+        <TextView
+            android:id="@+id/season1"
+            android:text="@string/season"
+            android:textSize="27sp"
+            android:textColor="@color/txt_color"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/season"
+            app:layout_constraintTop_toBottomOf="@id/img" />
 
-    <TextView
-        android:id="@+id/growTime1"
-        android:text="@string/gtime"
-        android:textSize="27sp"
-        android:textColor="@color/txt_color"
-        android:layout_width="170dp"
-        android:layout_height="40dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/growTime"
-        app:layout_constraintTop_toBottomOf="@id/season1" />
+        <TextView
+            android:id="@+id/season"
+            android:text="@string/holder"
+            android:textAlignment="center"
+            android:textSize="27sp"
+            android:textColor="@color/txt_color"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            app:layout_constraintLeft_toRightOf="@id/season1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/name" />
 
-    <TextView
-        android:id="@+id/growTime"
-        android:text="@string/holder"
-        android:textAlignment="center"
-        android:textSize="27sp"
-        android:textColor="@color/txt_color"
-        android:layout_width="200dp"
-        android:layout_height="40dp"
-        app:layout_constraintLeft_toRightOf="@id/growTime1"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/season" />
+        <TextView
+            android:id="@+id/growTime1"
+            android:text="@string/gtime"
+            android:textSize="27sp"
+            android:textColor="@color/txt_color"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/growTime"
+            app:layout_constraintTop_toBottomOf="@id/season1" />
 
-    <TextView
-        android:id="@+id/regrowTime1"
-        android:text="@string/rgtime"
-        android:textSize="27sp"
-        android:textColor="@color/txt_color"
-        android:layout_width="170dp"
-        android:layout_height="40dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/regrowTime"
-        app:layout_constraintTop_toBottomOf="@id/growTime1" />
+        <TextView
+            android:id="@+id/growTime"
+            android:text="@string/holder"
+            android:textAlignment="center"
+            android:textSize="27sp"
+            android:textColor="@color/txt_color"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            app:layout_constraintLeft_toRightOf="@id/growTime1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/season" />
 
-    <TextView
-        android:id="@+id/regrowTime"
-        android:text="@string/holder"
-        android:textAlignment="center"
-        android:textSize="27sp"
-        android:textColor="@color/txt_color"
-        android:layout_width="200dp"
-        android:layout_height="40dp"
-        app:layout_constraintLeft_toRightOf="@id/regrowTime1"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/growTime" />
+        <TextView
+            android:id="@+id/regrowTime1"
+            android:text="@string/rgtime"
+            android:textSize="27sp"
+            android:textColor="@color/txt_color"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/regrowTime"
+            app:layout_constraintTop_toBottomOf="@id/growTime1" />
+
+        <TextView
+            android:id="@+id/regrowTime"
+            android:text="@string/holder"
+            android:textAlignment="center"
+            android:textSize="27sp"
+            android:textColor="@color/txt_color"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            app:layout_constraintLeft_toRightOf="@id/regrowTime1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/growTime" />
 
 
-    <TextView
-        android:id="@+id/sellPrice1"
-        android:text="@string/sellp"
-        android:textSize="27sp"
-        android:textColor="@color/txt_color"
-        android:layout_width="170dp"
-        android:layout_height="40dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/sellPrice"
-        app:layout_constraintTop_toBottomOf="@id/regrowTime1" />
+        <TextView
+            android:id="@+id/sellPrice1"
+            android:text="@string/sellp"
+            android:textSize="27sp"
+            android:textColor="@color/txt_color"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/sellPrice"
+            app:layout_constraintTop_toBottomOf="@id/regrowTime1" />
 
-    <TextView
-        android:id="@+id/sellPrice"
-        android:text="@string/holder"
-        android:textAlignment="center"
-        android:textSize="27sp"
-        android:textColor="@color/txt_color"
-        android:layout_width="200dp"
-        android:layout_height="40dp"
-        app:layout_constraintLeft_toRightOf="@id/sellPrice1"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/regrowTime" />
+        <TextView
+            android:id="@+id/sellPrice"
+            android:text="@string/holder"
+            android:textAlignment="center"
+            android:textSize="27sp"
+            android:textColor="@color/txt_color"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            app:layout_constraintLeft_toRightOf="@id/sellPrice1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/regrowTime" />
 
-    <TextView
-        android:id="@+id/pierrePrice1"
-        android:text="@string/pPrice"
-        android:textSize="27sp"
-        android:textColor="@color/txt_color"
-        android:layout_width="170dp"
-        android:layout_height="40dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/pierrePrice"
-        app:layout_constraintTop_toBottomOf="@id/sellPrice1" />
+        <TextView
+            android:id="@+id/pierrePrice1"
+            android:text="@string/pPrice"
+            android:textSize="27sp"
+            android:textColor="@color/txt_color"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/pierrePrice"
+            app:layout_constraintTop_toBottomOf="@id/sellPrice1" />
 
-    <TextView
-        android:id="@+id/pierrePrice"
-        android:text="@string/holder"
-        android:textAlignment="center"
-        android:textSize="27sp"
-        android:textColor="@color/txt_color"
-        android:layout_width="200dp"
-        android:layout_height="40dp"
-        app:layout_constraintLeft_toRightOf="@id/sellPrice1"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/sellPrice" />
+        <TextView
+            android:id="@+id/pierrePrice"
+            android:text="@string/holder"
+            android:textAlignment="center"
+            android:textSize="27sp"
+            android:textColor="@color/txt_color"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            app:layout_constraintLeft_toRightOf="@id/sellPrice1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sellPrice" />
 
-    <TextView
-        android:id="@+id/jojaPrice1"
-        android:text="@string/jPrice"
-        android:textSize="27sp"
-        android:textColor="@color/txt_color"
-        android:layout_width="170dp"
-        android:layout_height="40dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/jojaPrice"
-        app:layout_constraintTop_toBottomOf="@id/pierrePrice1" />
+        <TextView
+            android:id="@+id/jojaPrice1"
+            android:text="@string/jPrice"
+            android:textSize="27sp"
+            android:textColor="@color/txt_color"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/jojaPrice"
+            app:layout_constraintTop_toBottomOf="@id/pierrePrice1" />
 
-    <TextView
-        android:id="@+id/jojaPrice"
-        android:text="@string/holder"
-        android:textAlignment="center"
-        android:textSize="27sp"
-        android:textColor="@color/txt_color"
-        android:layout_width="200dp"
-        android:layout_height="40dp"
-        app:layout_constraintLeft_toRightOf="@id/sellPrice1"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/pierrePrice" />
+        <TextView
+            android:id="@+id/jojaPrice"
+            android:text="@string/holder"
+            android:textAlignment="center"
+            android:textSize="27sp"
+            android:textColor="@color/txt_color"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            app:layout_constraintLeft_toRightOf="@id/sellPrice1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pierrePrice" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
