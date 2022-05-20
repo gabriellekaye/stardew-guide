@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,213 +8,22 @@
     android:background="@color/background_color"
     tools:context=".SpringCropsListActivity" >
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="300dp"
+        android:layout_height="220dp"
+        android:src="@drawable/logo"
+        android:contentDescription="@string/logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBaseline_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/crops_list"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingBottom="50dp" >
+        android:layout_height="400dp"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
-        <ImageView
-            android:id="@+id/logo"
-            android:layout_width="300dp"
-            android:layout_height="220dp"
-            android:src="@drawable/logo"
-            android:contentDescription="@string/logo"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintBaseline_toTopOf="parent" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/crop1"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:text="Blue Jazz"
-            android:layout_margin="10dp"
-            android:textSize="25sp"
-            android:textColor="@color/txt_color"
-            android:background="@color/btn_color"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:drawableLeft="@drawable/bluejazz"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/logo" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/crop2"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:text="Cauliflower"
-            android:layout_margin="10dp"
-            android:textSize="25sp"
-            android:textColor="@color/txt_color"
-            android:background="@color/btn_color"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:drawableLeft="@drawable/cauliflower"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/crop1" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/crop3"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:text="Coffee Bean"
-            android:layout_margin="10dp"
-            android:textSize="25sp"
-            android:textColor="@color/txt_color"
-            android:background="@color/btn_color"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:drawableLeft="@drawable/coffeebean"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/crop2" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/crop4"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:text="Garlic"
-            android:layout_margin="10dp"
-            android:textSize="25sp"
-            android:textColor="@color/txt_color"
-            android:background="@color/btn_color"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:drawableLeft="@drawable/garlic"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/crop3" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/crop5"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:text="Green Bean"
-            android:layout_margin="10dp"
-            android:textSize="25sp"
-            android:textColor="@color/txt_color"
-            android:background="@color/btn_color"
-            android:drawableLeft="@drawable/greenbean"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/crop4" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/crop6"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:text="Kale"
-            android:layout_margin="10dp"
-            android:textSize="25sp"
-            android:textColor="@color/txt_color"
-            android:background="@color/btn_color"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:drawableLeft="@drawable/kale"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/crop5" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/crop7"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:text="Parsnip"
-            android:layout_margin="10dp"
-            android:textSize="25sp"
-            android:textColor="@color/txt_color"
-            android:background="@color/btn_color"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:drawableLeft="@drawable/parsnip"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/crop6" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/crop8"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:text="Potato"
-            android:layout_margin="10dp"
-            android:textSize="25sp"
-            android:textColor="@color/txt_color"
-            android:background="@color/btn_color"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:drawableLeft="@drawable/potato"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/crop7" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/crop9"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:text="Rhubarb"
-            android:layout_margin="10dp"
-            android:textSize="25sp"
-            android:textColor="@color/txt_color"
-            android:background="@color/btn_color"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:drawableLeft="@drawable/rhubarb"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/crop8" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/crop10"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:text="Strawberry"
-            android:layout_margin="10dp"
-            android:textSize="25sp"
-            android:textColor="@color/txt_color"
-            android:background="@color/btn_color"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:drawableLeft="@drawable/strawberry"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/crop9" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/crop11"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:text="Tulip"
-            android:layout_margin="10dp"
-            android:textSize="25sp"
-            android:textColor="@color/txt_color"
-            android:background="@color/btn_color"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:drawableLeft="@drawable/tulip"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/crop10" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/crop12"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:text="Unmilled Rice"
-            android:layout_margin="10dp"
-            android:textSize="25sp"
-            android:textColor="@color/txt_color"
-            android:background="@color/btn_color"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:drawableLeft="@drawable/unmilledrice"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/crop11" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

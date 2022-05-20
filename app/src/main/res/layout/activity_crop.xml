@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_color"
-    tools:context=".Crop">
+    tools:context=".CropActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -28,16 +28,14 @@
             android:id="@+id/img"
             android:layout_width="110dp"
             android:layout_height="150dp"
-            android:src="@drawable/strawberry"
             android:contentDescription="@string/logo"
-            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toLeftOf="@id/name"
             app:layout_constraintTop_toBottomOf="@id/logo" />
 
         <TextView
             android:id="@+id/name"
-            android:text="@string/holder"
             android:textAlignment="center"
             android:textSize="30sp"
             android:textColor="@color/txt_color"
@@ -62,7 +60,6 @@
 
         <TextView
             android:id="@+id/season"
-            android:text="@string/holder"
             android:textAlignment="center"
             android:textSize="27sp"
             android:textColor="@color/txt_color"
@@ -85,7 +82,6 @@
 
         <TextView
             android:id="@+id/growTime"
-            android:text="@string/holder"
             android:textAlignment="center"
             android:textSize="27sp"
             android:textColor="@color/txt_color"
@@ -108,7 +104,6 @@
 
         <TextView
             android:id="@+id/regrowTime"
-            android:text="@string/holder"
             android:textAlignment="center"
             android:textSize="27sp"
             android:textColor="@color/txt_color"
@@ -132,7 +127,6 @@
 
         <TextView
             android:id="@+id/sellPrice"
-            android:text="@string/holder"
             android:textAlignment="center"
             android:textSize="27sp"
             android:textColor="@color/txt_color"
@@ -155,7 +149,6 @@
 
         <TextView
             android:id="@+id/pierrePrice"
-            android:text="@string/holder"
             android:textAlignment="center"
             android:textSize="27sp"
             android:textColor="@color/txt_color"
@@ -178,7 +171,6 @@
 
         <TextView
             android:id="@+id/jojaPrice"
-            android:text="@string/holder"
             android:textAlignment="center"
             android:textSize="27sp"
             android:textColor="@color/txt_color"

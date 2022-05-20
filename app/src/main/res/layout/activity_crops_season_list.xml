@@ -5,8 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_color"
-    tools:context=".ForageListActivity">
+    tools:context=".CropsSeasonListActivity"
+    android:background="@color/background_color" >
 
     <ImageView
         android:id="@+id/logo"
@@ -25,7 +25,7 @@
         android:layout_height="60dp"
         android:paddingLeft="50dp"
         android:paddingRight="50dp"
-        android:drawableLeft="@drawable/spring"
+        android:drawableStart="@drawable/spring"
         android:text="@string/spring"
         android:layout_margin="20dp"
         android:textSize="30sp"
@@ -41,7 +41,7 @@
         android:layout_height="60dp"
         android:paddingLeft="50dp"
         android:paddingRight="50dp"
-        android:drawableLeft="@drawable/summer"
+        android:drawableStart="@drawable/summer"
         android:text="@string/summer"
         android:layout_margin="20dp"
         android:textSize="30sp"
@@ -57,7 +57,7 @@
         android:layout_height="60dp"
         android:paddingLeft="50dp"
         android:paddingRight="50dp"
-        android:drawableLeft="@drawable/fall"
+        android:drawableStart="@drawable/fall"
         android:text="@string/fall"
         android:layout_margin="20dp"
         android:textSize="30sp"
@@ -73,7 +73,7 @@
         android:layout_height="60dp"
         android:paddingLeft="50dp"
         android:paddingRight="50dp"
-        android:drawableLeft="@drawable/winter"
+        android:drawableStart="@drawable/winter"
         android:text="@string/winter"
         android:layout_margin="20dp"
         android:textSize="30sp"
