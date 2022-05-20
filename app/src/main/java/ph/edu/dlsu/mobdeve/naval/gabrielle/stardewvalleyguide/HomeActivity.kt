@@ -15,7 +15,7 @@ class HomeActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.cropsBtn.setOnClickListener {
-            val goToCropsList = Intent(this, CropsListActivity::class.java)
+            val goToCropsList = Intent(this, CropsSeasonListActivity::class.java)
             startActivity(goToCropsList)
         }
     }

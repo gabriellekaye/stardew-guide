@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import ph.edu.dlsu.mobdeve.naval.gabrielle.stardewvalleyguide.databinding.ActivityCropBinding
 
-class Crop : AppCompatActivity() {
+class CropActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivityCropBinding
 
@@ -17,11 +17,11 @@ class Crop : AppCompatActivity() {
 
         binding.img.setImageResource(bundle!!.getInt("img"))
         binding.name.text = bundle.getString("name")
-        binding.growTime.text = bundle.getString("growTime")
+        binding.growTime.text = bundle.getString("growth")
         binding.regrowTime.text = bundle.getString("regrowth")
         binding.season.text = bundle.getString("season")
-        binding.sellPrice.text = bundle.getString("sellPrice")
-        binding.pierrePrice.text = bundle.getString("pPrice")
-        binding.jojaPrice.text = bundle.getString("jPrice")
+        binding.sellPrice.text = bundle.getString("sell")
+        binding.pierrePrice.text = bundle.getString("pierre")
+        binding.jojaPrice.text = bundle.getString("joja")
     }
 }
