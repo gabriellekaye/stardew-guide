@@ -90,5 +90,58 @@ class FallCropsListActivity : AppCompatActivity() {
         crop6.sell = "75g - 320g"
         crop6.pierre = "60g"
         crop6.joja = "75g"
+
+        var crop7 = Crop()
+        crop7.name = "Bok Choy"
+        crop7.season = "Fall"
+        crop7.img = R.drawable.bokchoy
+        crop7.growth = "4 days"
+        crop7.regrowth = "No"
+        crop7.sell = "80g - 160g"
+        crop7.pierre = "50g"
+        crop7.joja = "62g"
+
+        var crop8 = Crop()
+        crop8.name = "Beet"
+        crop8.season = "Fall"
+        crop8.img = R.drawable.beet
+        crop8.growth = "6 days"
+        crop8.regrowth = "No"
+        crop8.sell = "100g - 200g"
+        crop8.pierre = "Not Sold Here"
+        crop8.joja = "Not Sold here"
+
+        var crop9 = Crop()
+        crop9.name = "Artichoke"
+        crop9.season = "Fall"
+        crop9.img = R.drawable.artichoke
+        crop9.growth = "8 days"
+        crop9.regrowth = "No"
+        crop9.sell = "160g - 320g"
+        crop9.pierre = "30g"
+        crop9.joja = "Not Sold here"
+
+        var crop10 = Crop()
+        crop10.name = "Amaranth"
+        crop10.season = "Fall"
+        crop10.img = R.drawable.amaranth
+        crop10.growth = "7 days"
+        crop10.regrowth = "No"
+        crop10.sell = "150g - 300g"
+        crop10.pierre = "70g"
+        crop10.joja = "87g"
+
+        dao.addCrop(crop1)
+        dao.addCrop(crop2)
+        dao.addCrop(crop3)
+        dao.addCrop(crop4)
+        dao.addCrop(crop5)
+        dao.addCrop(crop6)
+        dao.addCrop(crop7)
+        dao.addCrop(crop8)
+        dao.addCrop(crop9)
+        dao.addCrop(crop10)
+
+        cropArrayList = dao.getCrop()
     }
 }

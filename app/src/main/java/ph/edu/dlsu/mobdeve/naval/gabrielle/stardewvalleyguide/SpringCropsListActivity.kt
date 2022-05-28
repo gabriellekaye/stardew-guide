@@ -25,6 +25,7 @@ class SpringCropsListActivity : AppCompatActivity() {
 
         cropAdapter = CropAdapter(applicationContext, cropArrayList)
         binding.cropsList.setAdapter(cropAdapter)
+        binding.seasonText.text = "Spring Crops"
     }
 
     private fun init() {
