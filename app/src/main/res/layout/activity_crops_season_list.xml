@@ -67,18 +67,16 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/summer" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <TextView
         android:id="@+id/winter"
         android:layout_width="300dp"
         android:layout_height="60dp"
-        android:paddingLeft="50dp"
-        android:paddingRight="50dp"
-        android:drawableStart="@drawable/winter"
-        android:text="@string/winter"
         android:layout_margin="20dp"
-        android:textSize="30sp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:text="*No crops grown in Winter!"
         android:textColor="@color/txt_color"
-        android:background="@color/btn_color"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/fall" />

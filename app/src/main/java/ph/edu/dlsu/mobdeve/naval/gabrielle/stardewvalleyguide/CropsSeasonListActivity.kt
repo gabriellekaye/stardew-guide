@@ -22,12 +22,14 @@ class CropsSeasonListActivity : AppCompatActivity() {
 
         //Summer
         binding.summer.setOnClickListener{
-
+            val goToSummerCrops = Intent(this, SummerCropsListActivity::class.java)
+            startActivity(goToSummerCrops)
         }
 
         //Fall
         binding.fall.setOnClickListener {
-
+            val goToFallCrops = Intent(this, FallCropsListActivity::class.java)
+            startActivity(goToFallCrops)
         }
     }
 }
