@@ -15,13 +15,27 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnLogin.setOnClickListener {
-            var goToHome = Intent(this, HomeActivity::class.java)
-            startActivity(goToHome)
+            if (checkFields()) {
+                var goToHome = Intent(this, HomeActivity::class.java)
+                startActivity(goToHome)
+            }
         }
 
         binding.tvRegister.setOnClickListener {
             var goToRegister = Intent(this, RegisterActivity::class.java)
             startActivity(goToRegister)
         }
+    }
+
+    fun checkFields(): Boolean {
+        var username = binding.etUsername.text.toString()
+        var password = binding.etPassword.text.toString()
+
+        if (username.isNullOrBlank() || password.isNullOrBlank()) {
+            binding.tvError.text = "Please fill out all fields."
+            return false
+        }
+        else
+            return true
     }
 }

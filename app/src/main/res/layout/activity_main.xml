@@ -61,6 +61,18 @@
         android:background="@color/btn_color" />
 
     <TextView
+        android:id="@+id/tv_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_login"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="5dp"
+        android:textColor="#F44336"
+        />
+
+
+    <TextView
         android:id="@+id/tv_question"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
