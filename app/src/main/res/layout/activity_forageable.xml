@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".CropActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo"
+            android:contentDescription="@string/logo"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBaseline_toTopOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="110dp"
+            android:layout_height="150dp"
+            android:contentDescription="@string/logo"
+            android:layout_marginStart="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/name"
+            app:layout_constraintTop_toBottomOf="@id/logo" />
+
+        <TextView
+            android:id="@+id/name"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textColor="@color/txt_color"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:gravity="center"
+            android:includeFontPadding="true"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/img"
+            app:layout_constraintTop_toBottomOf="@id/logo" />
+
+        <TextView
+            android:id="@+id/season1"
+            android:text="@string/season"
+            android:textSize="27sp"
+            android:textColor="@color/txt_color"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/season"
+            app:layout_constraintTop_toBottomOf="@id/img" />
+
+        <TextView
+            android:id="@+id/season"
+            android:textAlignment="center"
+            android:textSize="27sp"
+            android:textColor="@color/txt_color"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            app:layout_constraintLeft_toRightOf="@id/season1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/name" />
+
+        <TextView
+            android:id="@+id/description1"
+            android:text="Description:"
+            android:textSize="27sp"
+            android:textColor="@color/txt_color"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/description"
+            app:layout_constraintTop_toBottomOf="@id/season1" />
+
+        <TextView
+            android:id="@+id/description"
+            android:textAlignment="center"
+            android:textSize="27sp"
+            android:textColor="@color/txt_color"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            app:layout_constraintLeft_toRightOf="@id/description1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/season" />
+
+        <TextView
+            android:id="@+id/found1"
+            android:text="Found In:"
+            android:textSize="27sp"
+            android:textColor="@color/txt_color"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/found"
+            app:layout_constraintTop_toBottomOf="@id/description1" />
+
+        <TextView
+            android:id="@+id/found"
+            android:textAlignment="center"
+            android:textSize="27sp"
+            android:textColor="@color/txt_color"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            app:layout_constraintLeft_toRightOf="@id/found1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/description" />
+
+
+        <TextView
+            android:id="@+id/sellPrice1"
+            android:text="@string/sellp"
+            android:textSize="27sp"
+            android:textColor="@color/txt_color"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/sellPrice"
+            app:layout_constraintTop_toBottomOf="@id/found1" />
+
+        <TextView
+            android:id="@+id/sellPrice"
+            android:textAlignment="center"
+            android:textSize="27sp"
+            android:textColor="@color/txt_color"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            app:layout_constraintLeft_toRightOf="@id/sellPrice1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/found" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
