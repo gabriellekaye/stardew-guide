@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity"
     android:background="@color/background_color">
-    
+
     <ImageView
         android:id="@+id/logo"
         android:layout_width="300dp"
@@ -30,13 +30,13 @@
         android:textColor="@color/txt_color"
         android:textSize="30sp" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/bookmarks"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/bookmark_txt" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/bookmarks"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bookmark_txt" />
 
     <TextView
         android:id="@+id/profile_txt"
@@ -51,18 +51,18 @@
         android:textColor="@color/txt_color"
         android:textSize="30sp" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/profile_btn"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/profile_txt"
-        android:text="User"
-        android:layout_margin="10dp"
-        android:textColor="@color/txt_color"
-        android:textSize="25sp"
-        android:background="@color/btn_color" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/profile_btn"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile_txt"
+            android:text="User"
+            android:layout_margin="10dp"
+            android:textColor="@color/txt_color"
+            android:textSize="25sp"
+            android:background="@color/btn_color" />
 
     <TextView
         android:id="@+id/tutorials_txt"
@@ -90,43 +90,56 @@
         android:textSize="25sp"
         android:background="@color/btn_color" />
 
-<!--    <androidx.appcompat.widget.AppCompatButton-->
-<!--        android:id="@+id/fishing_tutorial_btn"-->
-<!--        android:layout_width="300dp"-->
-<!--        android:layout_height="50dp"-->
-<!--        app:layout_constraintLeft_toLeftOf="parent"-->
-<!--        app:layout_constraintRight_toRightOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/plant_tutorial_btn"-->
-<!--        android:text="Fishing"-->
-<!--        android:layout_margin="10dp"-->
-<!--        android:textColor="@color/txt_color"-->
-<!--        android:textSize="25sp"-->
-<!--        android:background="@color/btn_color" />-->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/fishing_tutorial_btn"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/plant_tutorial_btn"
+                android:text="Fishing"
+                android:layout_margin="10dp"
+                android:textColor="@color/txt_color"
+                android:textSize="25sp"
+                android:background="@color/btn_color" />
 
-<!--    <androidx.appcompat.widget.AppCompatButton-->
-<!--        android:id="@+id/forage_tutorial_btn"-->
-<!--        android:layout_width="300dp"-->
-<!--        android:layout_height="50dp"-->
-<!--        app:layout_constraintLeft_toLeftOf="parent"-->
-<!--        app:layout_constraintRight_toRightOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/fishing_tutorial_btn"-->
-<!--        android:text="Foraging"-->
-<!--        android:layout_margin="10dp"-->
-<!--        android:textColor="@color/txt_color"-->
-<!--        android:textSize="25sp"-->
-<!--        android:background="@color/btn_color" />-->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/forage_tutorial_btn"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fishing_tutorial_btn"
+                android:text="Foraging"
+                android:layout_margin="10dp"
+                android:textColor="@color/txt_color"
+                android:textSize="25sp"
+                android:background="@color/btn_color" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/crops_btn"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/plant_tutorial_btn"
-        android:text="crops list"
-        android:layout_margin="10dp"
-        android:textColor="@color/txt_color"
-        android:textSize="25sp"
-        android:background="@color/btn_color" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/crops_btn"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forage_tutorial_btn"
+            android:text="crops"
+            android:layout_margin="10dp"
+            android:textColor="@color/txt_color"
+            android:textSize="25sp"
+            android:background="@color/btn_color" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/forage_btn"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/crops_btn"
+            android:text="Forageables"
+            android:layout_margin="10dp"
+            android:textColor="@color/txt_color"
+            android:textSize="25sp"
+            android:background="@color/btn_color" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
