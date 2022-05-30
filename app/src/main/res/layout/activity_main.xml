@@ -22,11 +22,12 @@
     <EditText
         android:id="@+id/et_username"
         android:layout_width="300dp"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/logo"
         android:hint="Username"
+        android:inputType="textCapWords"
         android:gravity="center"
         android:textColor="@color/txt_color"
         android:textSize="22sp" />
@@ -34,13 +35,13 @@
     <EditText
         android:id="@+id/et_password"
         android:layout_width="300dp"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/et_username"
         android:hint="Password"
-        android:inputType="textPassword"
+        android:inputType="textPassword|textCapWords"
         android:gravity="center"
         android:textColor="@color/txt_color"
         android:textSize="22sp" />

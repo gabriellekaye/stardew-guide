@@ -16,8 +16,30 @@ class RegisterActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnRegister.setOnClickListener{
-            var goToHome = Intent(this, HomeActivity::class.java)
-            startActivity(goToHome)
+            if (checkFields()) {
+                var goToHome = Intent(this, HomeActivity::class.java)
+                startActivity(goToHome)
+                finish()
+            }
         }
+    }
+
+    fun checkFields(): Boolean {
+        var username = binding.etUsername.text.toString()
+        var name = binding.etName.text.toString()
+        var farmName = binding.etFarmName.text.toString()
+        var gender = binding.etGender.text.toString()
+        var farmType = binding.etFarmType.text.toString()
+        var currSeason = binding.etCurrSeason.text.toString()
+        var password = binding.etPassword.text.toString()
+
+        if (username.isNullOrBlank() || password.isNullOrBlank() || name.isNullOrBlank() ||
+            farmName.isNullOrBlank() || gender.isNullOrBlank() || farmType.isNullOrBlank() ||
+            currSeason.isNullOrBlank()) {
+            binding.tvError.text = "Please fill out all fields."
+            return false
+        }
+        else
+            return true
     }
 }

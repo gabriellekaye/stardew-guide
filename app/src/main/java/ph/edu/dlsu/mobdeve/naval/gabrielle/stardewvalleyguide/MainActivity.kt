@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
             if (checkFields()) {
                 var goToHome = Intent(this, HomeActivity::class.java)
                 startActivity(goToHome)
+                finish()
             }
         }
 
