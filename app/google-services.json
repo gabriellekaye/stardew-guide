@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1074465963972",
+    "project_id": "stardewvalleyguide-f1bc9",
+    "storage_bucket": "stardewvalleyguide-f1bc9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1074465963972:android:51d7cf8ca623c640ccae91",
+        "android_client_info": {
+          "package_name": "ph.edu.dlsu.mobdeve.naval.gabrielle.stardewvalleyguide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1074465963972-01t4gagr64hgrh26olj85mbaoimms1nt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ph.edu.dlsu.mobdeve.naval.gabrielle.stardewvalleyguide",
+            "certificate_hash": "8a14c0456cc11105936434d8ea2aefe29f5a4de1"
+          }
+        },
+        {
+          "client_id": "1074465963972-s0sphmh1ncjdc0i8d3kqdnigqs768se6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDO0Synj1wLtfJmrHLDwUTfopJ3EqHDyqY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1074465963972-s0sphmh1ncjdc0i8d3kqdnigqs768se6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
