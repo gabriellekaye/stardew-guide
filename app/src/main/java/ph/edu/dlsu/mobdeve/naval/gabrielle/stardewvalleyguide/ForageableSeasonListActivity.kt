@@ -14,28 +14,28 @@ class ForageableSeasonListActivity : AppCompatActivity() {
         binding = ActivityForageableSeasonListBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        //Spring forageables
+        //Spring
         binding.spring.setOnClickListener{
-            //val goToSpring = Intent(this, SpringForageablesListActivity::class.java)
-            //startActivity(goToSpring)
+            val goToSpring = Intent(this, SpringForageableListActivity::class.java)
+            startActivity(goToSpring)
         }
 
-        //Summer forageables
+        //Summer
         binding.summer.setOnClickListener{
-            //val goToSummer = Intent(this, SummerForageablesListActivity::class.java)
-            //startActivity(goToSummer)
+            val goToSummer = Intent(this, SummerForageableListActivity::class.java)
+            startActivity(goToSummer)
         }
 
-        //Fall forageables
+        //Fall
         binding.fall.setOnClickListener {
-            //val goToFall = Intent(this, FallForageablesListActivity::class.java)
-            //startActivity(goToFall)
+            val goToFall = Intent(this, FallForageableListActivity::class.java)
+            startActivity(goToFall)
         }
 
-        //Winter forageables
+        //Winter
         binding.winter.setOnClickListener{
-            //val goToWinter = Intent(this, WinterForageablesActivity::class.java)
-            //startActivity(goToWinter)
+            val goToWinter = Intent(this, WinterForageableListActivity::class.java)
+            startActivity(goToWinter)
         }
     }
 }
