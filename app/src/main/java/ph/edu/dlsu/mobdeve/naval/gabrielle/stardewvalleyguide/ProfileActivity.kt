@@ -39,6 +39,11 @@ class ProfileActivity : AppCompatActivity() {
             Toast.makeText(applicationContext,"Loading $username details...", Toast.LENGTH_SHORT).show()
         }
 
+        binding.btnEditAccount.setOnClickListener {
+            var goToEdit = Intent(this, EditProfileActivity::class.java)
+            startActivity(goToEdit)
+            finish()
+        }
         binding.btnLogout.setOnClickListener {
             storagePreferences.clearStringPreferences()
 
