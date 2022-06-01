@@ -5,16 +5,119 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_color"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo"
+        android:contentDescription="@string/logo"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBaseline_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/bookmark_txt"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        android:text="Bookmarks"
+        android:textColor="@color/txt_color"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/profile_txt"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bookmark_txt"
+        android:text="Profile"
+        android:layout_margin="10dp"
+        android:textColor="@color/txt_color"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/profile_btn"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_txt"
+        android:text="User"
+        android:layout_margin="10dp"
+        android:textColor="@color/txt_color"
+        android:textSize="25sp"
+        android:background="@color/btn_color" />
+
+    <TextView
+        android:id="@+id/tutorials_txt"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_btn"
+        android:text="Tutorials"
+        android:layout_margin="10dp"
+        android:textColor="@color/txt_color"
+        android:textSize="30sp" />
+
+    <!-- <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/plant_tutorial_btn"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tutorials_txt"
+        android:text="Planting"
+        android:layout_margin="10dp"
+        android:textColor="@color/txt_color"
+        android:textSize="25sp"
+        android:background="@color/btn_color" /> -->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/fishing_tutorial_btn"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tutorials_txt"
+        android:text="Fishing"
+        android:layout_margin="10dp"
+        android:textColor="@color/txt_color"
+        android:textSize="25sp"
+        android:background="@color/btn_color" />
+
+    <!--    <androidx.appcompat.widget.AppCompatButton-->
+    <!--        android:id="@+id/forage_tutorial_btn"-->
+    <!--        android:layout_width="300dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--        app:layout_constraintRight_toRightOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/fishing_tutorial_btn"-->
+    <!--        android:text="Foraging"-->
+    <!--        android:layout_margin="10dp"-->
+    <!--        android:textColor="@color/txt_color"-->
+    <!--        android:textSize="25sp"-->
+    <!--        android:background="@color/btn_color" />-->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/festival_tutorial_btn"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="Festivals"
+        android:textSize="25sp"
+        android:textColor="@color/txt_color"
+        android:background="@color/btn_color"
+        app:layout_constraintTop_toBottomOf="@id/fishing_tutorial_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="10dp"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

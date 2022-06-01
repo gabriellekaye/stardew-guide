@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">Stardew Valley Guide</string>
+    <string name="app_name">stardewvalleyguide</string>
+    <string name="spring">Spring</string>
+    <string name="summer">Summer</string>
+    <string name="fall">Fall</string>
+    <string name="winter">Winter</string>
+    <string name="logo">image</string>
+    <string name="season">Season:</string>
+    <string name="foundin">Found In:</string>
+    <string name="time">Time of Day:</string>
+    <string name="weather">Weather:</string>
+    <string name="size">Size:</string>
+    <string name="heal">Heals for:</string>
+    <string name="sell">Sells for:</string>
+    <string name="date">Date:</string>
+    <string name="location">Location:</string>
 </resources>
