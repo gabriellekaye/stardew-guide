@@ -70,37 +70,15 @@
             app:layout_constraintTop_toBottomOf="@id/name" />
 
         <TextView
-            android:id="@+id/description1"
-            android:text="Description:"
-            android:textSize="27sp"
-            android:textColor="@color/txt_color"
-            android:layout_width="150dp"
-            android:layout_height="40dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toLeftOf="@id/description"
-            app:layout_constraintTop_toBottomOf="@id/season1" />
-
-        <TextView
-            android:id="@+id/description"
-            android:textAlignment="center"
-            android:textSize="27sp"
-            android:textColor="@color/txt_color"
-            android:layout_width="200dp"
-            android:layout_height="40dp"
-            app:layout_constraintLeft_toRightOf="@id/description1"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/season" />
-
-        <TextView
             android:id="@+id/found1"
-            android:text="Found In:"
+            android:text="Found:"
             android:textSize="27sp"
             android:textColor="@color/txt_color"
             android:layout_width="150dp"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toLeftOf="@id/found"
-            app:layout_constraintTop_toBottomOf="@id/description1" />
+            app:layout_constraintTop_toBottomOf="@id/season1" />
 
         <TextView
             android:id="@+id/found"
@@ -111,30 +89,52 @@
             android:layout_height="40dp"
             app:layout_constraintLeft_toRightOf="@id/found1"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/description" />
-
+            app:layout_constraintTop_toBottomOf="@id/season" />
 
         <TextView
-            android:id="@+id/sellPrice1"
+            android:id="@+id/sell1"
             android:text="@string/sellp"
             android:textSize="27sp"
             android:textColor="@color/txt_color"
             android:layout_width="150dp"
             android:layout_height="40dp"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toLeftOf="@id/sellPrice"
+            app:layout_constraintRight_toLeftOf="@id/found"
             app:layout_constraintTop_toBottomOf="@id/found1" />
 
         <TextView
-            android:id="@+id/sellPrice"
+            android:id="@+id/sell"
             android:textAlignment="center"
             android:textSize="27sp"
             android:textColor="@color/txt_color"
             android:layout_width="200dp"
             android:layout_height="40dp"
-            app:layout_constraintLeft_toRightOf="@id/sellPrice1"
+            app:layout_constraintLeft_toRightOf="@id/found1"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/found" />
+
+        <TextView
+            android:id="@+id/description1"
+            android:text="Description:"
+            android:textSize="27sp"
+            android:textColor="@color/txt_color"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/sell"
+            app:layout_constraintTop_toBottomOf="@id/sell1" />
+
+        <TextView
+            android:id="@+id/description"
+            android:textAlignment="center"
+            android:textSize="27sp"
+            android:textColor="@color/txt_color"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/sell1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sell" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

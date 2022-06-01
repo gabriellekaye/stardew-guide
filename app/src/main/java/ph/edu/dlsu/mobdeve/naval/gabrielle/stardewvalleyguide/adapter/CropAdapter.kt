@@ -32,8 +32,7 @@ class CropAdapter: RecyclerView.Adapter<CropAdapter.CropViewHolder> {
     }
 
     override fun onCreateViewHolder(
-        parent: ViewGroup,
-        viewType: Int
+        parent: ViewGroup, viewType: Int
     ): CropAdapter.CropViewHolder {
         val itemBinding = ItemCropBinding.inflate(
             LayoutInflater.from(parent.context),

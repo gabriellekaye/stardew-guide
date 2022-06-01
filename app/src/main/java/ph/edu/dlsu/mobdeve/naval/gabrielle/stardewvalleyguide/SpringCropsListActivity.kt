@@ -6,26 +6,27 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import ph.edu.dlsu.mobdeve.naval.gabrielle.stardewvalleyguide.adapter.CropAdapter
 import ph.edu.dlsu.mobdeve.naval.gabrielle.stardewvalleyguide.dao.CropsDADArrayImpl
 import ph.edu.dlsu.mobdeve.naval.gabrielle.stardewvalleyguide.dao.CropsDAO
-import ph.edu.dlsu.mobdeve.naval.gabrielle.stardewvalleyguide.databinding.ActivityCropListBinding
+import ph.edu.dlsu.mobdeve.naval.gabrielle.stardewvalleyguide.databinding.ActivityListItemsBinding
 import ph.edu.dlsu.mobdeve.naval.gabrielle.stardewvalleyguide.model.Crop
 
-class SpringCropsListActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityCropListBinding
+class SpringCropsListActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityListItemsBinding
     private lateinit var cropAdapter: CropAdapter
     private lateinit var cropArrayList: ArrayList<Crop>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityCropListBinding.inflate(layoutInflater)
+        binding = ActivityListItemsBinding.inflate(layoutInflater)
         setContentView(binding.root)
         init()
 
-        binding.cropsList.setLayoutManager(LinearLayoutManager(applicationContext))
+        binding.list.setLayoutManager(LinearLayoutManager(applicationContext))
 
         cropAdapter = CropAdapter(applicationContext, cropArrayList)
-        binding.cropsList.setAdapter(cropAdapter)
+        binding.list.setAdapter(cropAdapter)
         binding.seasonText.text = "Spring Crops"
+
     }
 
     private fun init() {

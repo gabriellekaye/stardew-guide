@@ -13,7 +13,16 @@
             android:name=".ForageableSeasonListActivity"
             android:exported="false" />
         <activity
+            android:name=".WinterForageableListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FallForageableListActivity"
+            android:exported="false" />
+        <activity
             android:name=".FallCropsListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SummerForageableListActivity"
             android:exported="false" />
         <activity
             android:name=".SummerCropsListActivity"
@@ -22,7 +31,13 @@
             android:name=".CropActivity"
             android:exported="false" />
         <activity
+            android:name=".ForageableActivity"
+            android:exported="false" />
+        <activity
             android:name=".SpringCropsListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SpringForageableListActivity"
             android:exported="false" />
         <activity
             android:name=".CropsSeasonListActivity"
