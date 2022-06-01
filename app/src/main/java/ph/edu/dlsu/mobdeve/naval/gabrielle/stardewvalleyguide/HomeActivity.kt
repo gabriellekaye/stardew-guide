@@ -14,9 +14,13 @@ class HomeActivity : AppCompatActivity() {
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
         binding.profileBtn.setOnClickListener {
             var goToProfile = Intent(this, ProfileActivity::class.java)
+
+//            goToProfile.putExtras(intent.extras!!)
             startActivity(goToProfile)
+            finish()
         }
     }
 }
