@@ -20,7 +20,7 @@ class HomeActivity : AppCompatActivity() {
 
 //            goToProfile.putExtras(intent.extras!!)
             startActivity(goToProfile)
-            finish()
+//            finish()
         }
     }
 }

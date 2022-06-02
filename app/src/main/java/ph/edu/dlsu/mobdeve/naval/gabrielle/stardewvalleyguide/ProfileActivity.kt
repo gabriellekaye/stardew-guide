@@ -42,7 +42,7 @@ class ProfileActivity : AppCompatActivity() {
         binding.btnEditAccount.setOnClickListener {
             var goToEdit = Intent(this, EditProfileActivity::class.java)
             startActivity(goToEdit)
-            finish()
+//            finish()
         }
         binding.btnLogout.setOnClickListener {
             storagePreferences.clearStringPreferences()
