@@ -8,7 +8,6 @@ import ph.edu.dlsu.mobdeve.naval.gabrielle.stardewvalleyguide.databinding.Activi
 class CropsSeasonListActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivityCropsSeasonListBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityCropsSeasonListBinding.inflate(layoutInflater)

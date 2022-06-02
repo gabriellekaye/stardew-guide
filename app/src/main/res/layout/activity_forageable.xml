@@ -48,28 +48,6 @@
             app:layout_constraintTop_toBottomOf="@id/logo" />
 
         <TextView
-            android:id="@+id/season1"
-            android:text="@string/season"
-            android:textSize="27sp"
-            android:textColor="@color/txt_color"
-            android:layout_width="150dp"
-            android:layout_height="40dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toLeftOf="@id/season"
-            app:layout_constraintTop_toBottomOf="@id/img" />
-
-        <TextView
-            android:id="@+id/season"
-            android:textAlignment="center"
-            android:textSize="27sp"
-            android:textColor="@color/txt_color"
-            android:layout_width="200dp"
-            android:layout_height="40dp"
-            app:layout_constraintLeft_toRightOf="@id/season1"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/name" />
-
-        <TextView
             android:id="@+id/found1"
             android:text="Found:"
             android:textSize="27sp"
@@ -78,7 +56,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toLeftOf="@id/found"
-            app:layout_constraintTop_toBottomOf="@id/season1" />
+            app:layout_constraintTop_toBottomOf="@id/img" />
 
         <TextView
             android:id="@+id/found"
@@ -89,7 +67,7 @@
             android:layout_height="40dp"
             app:layout_constraintLeft_toRightOf="@id/found1"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/season" />
+            app:layout_constraintTop_toBottomOf="@id/img" />
 
         <TextView
             android:id="@+id/sell1"

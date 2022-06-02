@@ -17,7 +17,6 @@ class ForageableActivity : AppCompatActivity() {
 
         binding.img.setImageResource(bundle!!.getInt("img"))
         binding.name.text = bundle.getString("name")
-        binding.season.text = bundle.getString("season")
         binding.sell.text = bundle.getString("sell")
         binding.description.text = bundle.getString("description")
         binding.found.text = bundle.getString("found")

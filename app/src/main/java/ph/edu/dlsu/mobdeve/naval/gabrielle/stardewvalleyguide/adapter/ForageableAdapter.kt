@@ -20,12 +20,6 @@ class ForageableAdapter: RecyclerView.Adapter<ForageableAdapter.ForageableViewHo
         this.forageableArrayList = forageableArrayList
     }
 
-    fun addForageable(forageable: Forageable) {
-        forageableArrayList.add(0, forageable)
-        notifyItemInserted(0)
-        notifyDataSetChanged()
-    }
-
     override fun onCreateViewHolder(
         parent: ViewGroup, viewType: Int
     ): ForageableAdapter.ForageableViewHolder {
@@ -61,7 +55,6 @@ class ForageableAdapter: RecyclerView.Adapter<ForageableAdapter.ForageableViewHo
             val bundle = Bundle()
 
             bundle.putString("name", forageable.name)
-            bundle.putString("season", forageable.season)
             bundle.putString("description", forageable.description)
             bundle.putString("found", forageable.found)
             bundle.putString("sell", forageable.sell)
