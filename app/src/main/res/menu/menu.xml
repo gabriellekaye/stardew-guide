@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/events"
+        android:title="EVENTS"
+        app:iconTint="@null"
+        android:icon="@drawable/events"/>
+    <item
+        android:id="@+id/crops"
+        android:title="CROPS"
+        app:iconTint="@null"
+        android:icon="@drawable/crops"/>
+    <item
+        android:id="@+id/home"
+        android:title="HOME"
+        app:iconTint="@null"
+        android:icon="@drawable/user"/>
+    <item
+        android:id="@+id/fish"
+        android:title="FISH"
+        app:iconTint="@null"
+        android:icon="@drawable/fish"/>
+    <item
+        android:id="@+id/items"
+        android:title="ITEMS"
+        app:iconTint="@null"
+        android:icon="@drawable/items"/>
+</menu>

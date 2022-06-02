@@ -22,5 +22,7 @@ class HomeActivity : AppCompatActivity() {
             startActivity(goToProfile)
 //            finish()
         }
+
+        binding.navbar.itemIconTintList = null
     }
 }

@@ -107,5 +107,15 @@
         android:textColor="@color/txt_color"
         android:textSize="25sp"
         android:background="@color/btn_color" />
+    
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/btn_color"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
