@@ -113,6 +113,19 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/sell" />
 
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_bookmark"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bookmark"
+            android:background="@color/btn_color"
+            android:textColor="@color/txt_color"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/description" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
