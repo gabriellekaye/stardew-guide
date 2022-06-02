@@ -23,16 +23,4 @@ class HomeActivity : AppCompatActivity() {
 //            finish()
         }
     }
-
-
-        binding.cropsBtn.setOnClickListener {
-            val goToCropsList = Intent(this, CropsSeasonListActivity::class.java)
-            startActivity(goToCropsList)
-        }
-
-        binding.forageBtn.setOnClickListener{
-            val goToForageablesList = Intent(this, ForageableSeasonListActivity::class.java)
-            startActivity(goToForageablesList)
-        }
-    }
 }
