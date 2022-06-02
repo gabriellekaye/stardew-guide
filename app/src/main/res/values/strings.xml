@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Stardew Valley Guide</string>
+    <string name="spring">Spring</string>
+    <string name="summer">Summer</string>
+    <string name="fall">Fall</string>
+    <string name="winter">Winter</string>
+    <string name="logo">image</string>
+    <string name="season">Season:</string>
+    <string name="gtime">Growth Time:</string>
+    <string name="rgtime">Regrowth:</string>
+    <string name="sellp">Sell Price:</string>
+    <string name="pPrice">Pierre\'s Store:</string>
+    <string name="jPrice">Joja Mart:</string>
+    <string name="holder">Holder</string>
 </resources>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,115 +7,125 @@
     android:layout_height="match_parent"
     tools:context=".HomeActivity"
     android:background="@color/background_color">
-    
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="300dp"
-        android:layout_height="220dp"
-        android:src="@drawable/logo"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBaseline_toTopOf="parent"
-        />
 
-    <TextView
-        android:id="@+id/bookmark_txt"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/logo"
-        android:text="Book Marks"
-        android:textStyle="bold"
-        android:textColor="@color/txt_color"
-        android:textSize="30sp" />
-
-    <TextView
-        android:id="@+id/profile_txt"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/bookmark_txt"
-        android:text="Profile"
-        android:textStyle="bold"
-        android:layout_margin="10dp"
-        android:textColor="@color/txt_color"
-        android:textSize="30sp" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/profile_btn"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/profile_txt"
-        android:text="User"
-        android:layout_margin="10dp"
-        android:textColor="@color/txt_color"
-        android:textSize="25sp"
-        android:background="@color/btn_color" />
-
-    <TextView
-        android:id="@+id/tutorials_txt"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/profile_btn"
-        android:text="Tutorials"
-        android:textStyle="bold"
-        android:layout_margin="10dp"
-        android:textColor="@color/txt_color"
-        android:textSize="30sp" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/plant_tutorial_btn"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tutorials_txt"
-        android:text="Planting"
-        android:layout_margin="10dp"
-        android:textColor="@color/txt_color"
-        android:textSize="25sp"
-        android:background="@color/btn_color" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/fishing_tutorial_btn"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/plant_tutorial_btn"
-        android:text="Fishing"
-        android:layout_margin="10dp"
-        android:textColor="@color/txt_color"
-        android:textSize="25sp"
-        android:background="@color/btn_color" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/forage_tutorial_btn"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fishing_tutorial_btn"
-        android:text="Foraging"
-        android:layout_margin="10dp"
-        android:textColor="@color/txt_color"
-        android:textSize="25sp"
-        android:background="@color/btn_color" />
-    
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/navbar"
-        android:layout_width="match_parent"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_height="wrap_content"
-        app:itemBackground="@color/btn_color"
-        app:itemTextColor="@drawable/selector"
-        app:menu="@menu/menu"
-        app:labelVisibilityMode="labeled"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        android:layout_width="match_parent"
+        android:paddingBottom="50dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="300dp"
+            android:layout_height="220dp"
+            android:src="@drawable/logo"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBaseline_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/bookmark_txt"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logo"
+            android:text="Book Marks"
+            android:textStyle="bold"
+            android:textColor="@color/txt_color"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/profile_txt"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bookmark_txt"
+            android:text="Profile"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:textColor="@color/txt_color"
+            android:textSize="30sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/profile_btn"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile_txt"
+            android:text="User"
+            android:layout_margin="10dp"
+            android:textColor="@color/txt_color"
+            android:textSize="25sp"
+            android:background="@color/btn_color" />
+
+        <TextView
+            android:id="@+id/tutorials_txt"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile_btn"
+            android:text="Tutorials"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:textColor="@color/txt_color"
+            android:textSize="30sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/forage_tutorial_btn"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tutorials_txt"
+            android:text="Foraging"
+            android:layout_margin="10dp"
+            android:textColor="@color/txt_color"
+            android:textSize="25sp"
+            android:background="@color/btn_color" />
+
+        <TextView
+            android:id="@+id/seasonal"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/forage_tutorial_btn"
+            android:text="Lists"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:textColor="@color/txt_color"
+            android:textSize="30sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/crops"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/seasonal"
+            android:text="Crops"
+            android:layout_margin="10dp"
+            android:textColor="@color/txt_color"
+            android:textSize="25sp"
+            android:background="@color/btn_color" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/forage"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/crops"
+            android:text="Forageables"
+            android:layout_margin="10dp"
+            android:textColor="@color/txt_color"
+            android:textSize="25sp"
+            android:background="@color/btn_color" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
