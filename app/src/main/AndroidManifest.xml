@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="ph.edu.dlsu.mobdeve.naval.gabrielle.stardewvalleyguide">
+    package="ph.edu.dlsu.mobdeve.naval.gabrielle.stardewvalleyguide" >
 
     <application
         android:allowBackup="true"
@@ -8,7 +8,40 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.StardewValleyGuide">
+        android:theme="@style/Theme.StardewValleyGuide" >
+        <activity
+            android:name=".ForageableSeasonListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WinterForageableListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FallForageableListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FallCropsListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SummerForageableListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SummerCropsListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CropActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForageableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SpringCropsListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SpringForageableListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CropsSeasonListActivity"
+            android:exported="false" />
         <activity
             android:name=".EditProfileActivity"
             android:exported="false" />
@@ -24,8 +57,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"
-            android:windowSoftInputMode="stateHidden">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
