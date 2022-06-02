@@ -21,12 +21,6 @@ class CropAdapter: RecyclerView.Adapter<CropAdapter.CropViewHolder> {
         this.cropArrayList = cropArrayList
     }
 
-    fun addCrop(crop: Crop) {
-        cropArrayList.add(0, crop)
-        notifyItemInserted(0)
-        notifyDataSetChanged()
-    }
-
     override fun getItemCount(): Int {
         return cropArrayList.size
     }
@@ -64,7 +58,6 @@ class CropAdapter: RecyclerView.Adapter<CropAdapter.CropViewHolder> {
             val bundle = Bundle()
 
             bundle.putString("name", crop.name)
-            bundle.putString("season", crop.season)
             bundle.putString("growth", crop.growth)
             bundle.putString("regrowth", crop.regrowth)
             bundle.putString("sell", crop.sell)

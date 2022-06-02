@@ -16,10 +16,9 @@ class CropActivity : AppCompatActivity() {
         val bundle = intent.extras
 
         binding.img.setImageResource(bundle!!.getInt("img"))
-        binding.name.text = bundle.getString("name")
+        binding.name.text = bundle!!.getString("name")
         binding.growTime.text = bundle.getString("growth")
         binding.regrowTime.text = bundle.getString("regrowth")
-        binding.season.text = bundle.getString("season")
         binding.sellPrice.text = bundle.getString("sell")
         binding.pierrePrice.text = bundle.getString("pierre")
         binding.jojaPrice.text = bundle.getString("joja")
