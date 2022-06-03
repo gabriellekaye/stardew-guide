@@ -21,11 +21,6 @@ class FestivalAdapter: RecyclerView.Adapter<FestivalAdapter.FestivalViewHolder> 
         this.festivalArrayList = festivalArrayList
     }
 
-    fun addFestival(festival: Festival) {
-        festivalArrayList.add(0, festival)
-        notifyItemInserted(0)
-        notifyDataSetChanged()
-    }
     override fun getItemCount(): Int {
         return festivalArrayList.size
     }
@@ -67,10 +62,10 @@ class FestivalAdapter: RecyclerView.Adapter<FestivalAdapter.FestivalViewHolder> 
             val bundle = Bundle()
 
             bundle.putString("name", festival.name)
-            bundle.putString("season", festival.season)
             bundle.putString("date", festival.date)
             bundle.putString("location", festival.location)
             bundle.putString("time", festival.time)
+            bundle.putString("description", festival.description)
             bundle.putInt("img", festival.img)
 
             goToFestival.putExtras(bundle)

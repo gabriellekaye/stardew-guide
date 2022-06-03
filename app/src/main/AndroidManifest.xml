@@ -53,6 +53,9 @@
             android:exported="false"
             android:windowSoftInputMode="stateHidden" />
         <activity
+            android:name=".VideoTutorialActivity"
+            android:exported="false" />
+        <activity
             android:name=".WinterFishListActivity"
             android:exported="false" />
         <activity

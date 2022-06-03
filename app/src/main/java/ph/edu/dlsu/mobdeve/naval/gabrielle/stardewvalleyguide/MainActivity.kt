@@ -81,5 +81,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(goToHome)
             finish()
         }
+
+        binding.videoTutorialBtn.setOnClickListener{
+            val goToVideoTutorials = Intent(this, VideoTutorialActivity::class.java)
+            startActivity(goToVideoTutorials)
+        }
     }
 }
