@@ -14,7 +14,6 @@ class FishActivity : AppCompatActivity() {
         val bundle = intent.extras
 
         binding.name.text = bundle!!.getString("name")
-        binding.season.text = bundle!!.getString("season")
         binding.foundin.text = bundle!!.getString("foundin")
         binding.time.text = bundle!!.getString("time")
         binding.weather.text = bundle!!.getString("weather")

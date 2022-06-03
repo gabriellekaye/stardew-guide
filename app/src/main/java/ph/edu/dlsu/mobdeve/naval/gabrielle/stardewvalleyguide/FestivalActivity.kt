@@ -13,10 +13,10 @@ class FestivalActivity : AppCompatActivity() {
 
         val bundle = intent.extras
         binding.name.text = bundle!!.getString("name")
-        binding.season.text = bundle!!.getString("season")
         binding.date.text = bundle!!.getString("date")
         binding.location.text = bundle!!.getString("location")
         binding.time.text = bundle!!.getString("time")
+        binding.description.text = bundle!!.getString("description")
         binding.festimg.setImageResource(bundle!!.getInt("img"))
     }
 }

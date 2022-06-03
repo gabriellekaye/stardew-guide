@@ -21,11 +21,6 @@ class FishAdapter: RecyclerView.Adapter<FishAdapter.FishViewHolder> {
         this.fishArrayList = fishArrayList
     }
 
-    fun addFish(fish: Fish) {
-        fishArrayList.add(0, fish)
-        notifyItemInserted(0)
-        notifyDataSetChanged()
-    }
     override fun getItemCount(): Int {
         return fishArrayList.size
     }
@@ -67,7 +62,6 @@ class FishAdapter: RecyclerView.Adapter<FishAdapter.FishViewHolder> {
             val bundle = Bundle()
 
             bundle.putString("name", fish.name)
-            bundle.putString("season", fish.season)
             bundle.putString("foundin", fish.foundin)
             bundle.putString("time", fish.time)
             bundle.putString("weather", fish.weather)

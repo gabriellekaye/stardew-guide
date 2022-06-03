@@ -120,4 +120,18 @@
         android:layout_margin="10dp"
         />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/video_tutorial_btn"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="Video Tutorials"
+        android:textSize="25sp"
+        android:textColor="@color/txt_color"
+        android:background="@color/btn_color"
+        app:layout_constraintTop_toBottomOf="@id/festival_tutorial_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="10dp"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

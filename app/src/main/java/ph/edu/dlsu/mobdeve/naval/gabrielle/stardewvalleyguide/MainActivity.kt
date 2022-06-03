@@ -22,5 +22,10 @@ class MainActivity : AppCompatActivity() {
             val goToFestivalList = Intent(this, FestivalSeasonListActivity::class.java)
             startActivity(goToFestivalList)
         }
+
+        binding.videoTutorialBtn.setOnClickListener{
+            val goToVideoTutorials = Intent(this, VideoTutorialActivity::class.java)
+            startActivity(goToVideoTutorials)
+        }
     }
 }
