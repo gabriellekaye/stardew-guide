@@ -7,7 +7,6 @@ import android.widget.Toast
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import ph.edu.dlsu.mobdeve.naval.gabrielle.stardewvalleyguide.databinding.ActivityMainBinding
-import ph.edu.dlsu.mobdeve.naval.gabrielle.stardewvalleyguide.model.User
 import ph.edu.dlsu.mobdeve.naval.gabrielle.stardewvalleyguide.util.StoragePreferences
 
 class MainActivity : AppCompatActivity() {
