@@ -6,8 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/background_color"
-    android:paddingVertical="30dp">
+    android:background="@color/background_color">
 
     <ImageView
         android:id="@+id/logo"
@@ -68,7 +67,7 @@
         app:layout_constraintTop_toBottomOf="@id/btn_login"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="5sp"
         android:textColor="#F44336"
         />
 

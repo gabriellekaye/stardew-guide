@@ -102,7 +102,7 @@
         android:id="@+id/bnv_navbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:itemBackground="@color/btn_color"
+        app:itemBackground="@drawable/selector_bg"
         app:itemTextColor="@drawable/selector"
         app:menu="@menu/menu"
         app:labelVisibilityMode="labeled"
