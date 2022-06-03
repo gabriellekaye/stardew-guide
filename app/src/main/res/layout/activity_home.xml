@@ -68,7 +68,7 @@
                             android:textSize="20sp" />
 
                         <androidx.appcompat.widget.AppCompatButton
-                            android:id="@+id/forage_tutorial_btn"
+                            android:id="@+id/btn_tutorials"
                             android:layout_width="300dp"
                             android:layout_height="50dp"
                             app:layout_constraintLeft_toLeftOf="parent"
@@ -88,7 +88,7 @@
                             android:layout_marginTop="10dp"
                             app:layout_constraintLeft_toLeftOf="parent"
                             app:layout_constraintRight_toRightOf="parent"
-                            app:layout_constraintTop_toBottomOf="@id/forage_tutorial_btn"
+                            app:layout_constraintTop_toBottomOf="@id/btn_tutorials"
                             android:text="Book Marks"
                             android:textStyle="bold"
                             android:textColor="@color/txt_color"

@@ -15,8 +15,8 @@ class HomeActivity : AppCompatActivity() {
     private val bottomNavBar = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
             R.id.events -> {
-//                var goToFestivalLists = Intent(this, FestivalSeasonListActivity::class.java)
-//                startActivity(goToFestivalLists)
+                var goToFestivalLists = Intent(this, FestivalSeasonListActivity::class.java)
+                startActivity(goToFestivalLists)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.crops -> {
@@ -28,8 +28,8 @@ class HomeActivity : AppCompatActivity() {
                 return@OnNavigationItemSelectedListener false
             }
             R.id.fish -> {
-//                var goToFishLists = Intent(this, FishSeasonListActivity::class.java)
-//                startActivity(goToFishLists)
+                var goToFishLists = Intent(this, FishSeasonListActivity::class.java)
+                startActivity(goToFishLists)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.items -> {
@@ -53,15 +53,11 @@ class HomeActivity : AppCompatActivity() {
 //            finish()
         }
 
-//        binding.crops.setOnClickListener {
-//            var goToCropLists = Intent(this, CropsSeasonListActivity::class.java)
-//            startActivity(goToCropLists)
-//        }
-//
-//        binding.forage.setOnClickListener {
-//            var goToForageableList = Intent(this, ForageableSeasonListActivity::class.java)
-//            startActivity(goToForageableList)
-//        }
+
+        binding.btnTutorials.setOnClickListener {
+            var goToTutorial = Intent(this, VideoTutorialActivity::class.java)
+            startActivity(goToTutorial)
+        }
 
         binding.bnvNavbar.itemIconTintList = null
 

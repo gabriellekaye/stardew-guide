@@ -12,8 +12,8 @@ class ForageableSeasonListActivity : AppCompatActivity() {
     private val bottomNavBar = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
             R.id.events -> {
-//                var goToFestivalLists = Intent(this, FestivalSeasonListActivity::class.java)
-//                startActivity(goToFestivalLists)
+                var goToFestivalLists = Intent(this, FestivalSeasonListActivity::class.java)
+                startActivity(goToFestivalLists)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.crops -> {
@@ -27,8 +27,8 @@ class ForageableSeasonListActivity : AppCompatActivity() {
                 return@OnNavigationItemSelectedListener true
             }
             R.id.fish -> {
-//                var goToFishLists = Intent(this, FishSeasonListActivity::class.java)
-//                startActivity(goToFishLists)
+                var goToFishLists = Intent(this, FishSeasonListActivity::class.java)
+                startActivity(goToFishLists)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.items -> {
