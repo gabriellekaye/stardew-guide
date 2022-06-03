@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="300dp"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="5dp"
-    android:layout_margin="5dp"
+    android:layout_marginVertical="5dp"
     app:layout_constraintLeft_toLeftOf="parent"
     app:layout_constraintRight_toRightOf="parent"
     app:layout_constraintTop_toTopOf="parent"
@@ -14,25 +14,30 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        android:paddingRight="10dp"
+        android:paddingLeft="20dp">
 
         <ImageView
             android:id="@+id/fish_img"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:layout_margin="10dp"
+            android:layout_marginVertical="10dp"
             android:contentDescription="fish image"/>
 
         <TextView
             android:id="@+id/fish_name"
-            android:layout_width="200dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="20dp"
-            android:textAllCaps="true"
+            android:textAllCaps="false"
+            android:textStyle="bold"
             android:textAlignment="center"
-            android:textSize="25sp" />
+            android:textSize="23sp"
+            android:maxLines="2"
+            />
 
     </LinearLayout>
 
