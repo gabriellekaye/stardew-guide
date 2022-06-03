@@ -6,6 +6,12 @@
     <string name="winter">Winter</string>
     <string name="logo">image</string>
     <string name="season">Season:</string>
+    <string name="gtime">Growth Time:</string>
+    <string name="rgtime">Regrowth:</string>
+    <string name="sellp">Sell Price:</string>
+    <string name="pPrice">Pierre\'s Store:</string>
+    <string name="jPrice">Joja Mart:</string>
+    <string name="holder">Holder</string>
     <string name="foundin">Found In:</string>
     <string name="time">Time of Day:</string>
     <string name="weather">Weather:</string>
