@@ -95,6 +95,48 @@
             android:name=".FishSeasonListActivity"
             android:exported="false" />
         <activity
+            android:name=".VideoTutorialActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WinterFishListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WinterFestivalListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SummerFishListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SummerFestivalListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SpringFishListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SpringFestivalListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FishActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FestivalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FallFishListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FallFestivalListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FallFestivalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FestivalSeasonListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FishSeasonListActivity"
+            android:exported="false" />
+        <activity
             android:name=".HomeActivity"
             android:exported="false" />
         <activity
