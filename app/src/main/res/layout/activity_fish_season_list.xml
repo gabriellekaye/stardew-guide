@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".FishSeasonListActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="300dp"
+        android:layout_height="220dp"
+        android:src="@drawable/logo"
+        android:contentDescription="@string/logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBaseline_toTopOf="parent"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/spring"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:drawableStart="@drawable/spring"
+        android:text="@string/spring"
+        android:layout_margin="20dp"
+        android:textSize="30sp"
+        android:textColor="@color/txt_color"
+        android:background="@color/btn_color"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/summer"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:drawableStart="@drawable/summer"
+        android:text="@string/summer"
+        android:layout_margin="20dp"
+        android:textSize="30sp"
+        android:textColor="@color/txt_color"
+        android:background="@color/btn_color"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spring" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/fall"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:drawableStart="@drawable/fall"
+        android:text="@string/fall"
+        android:layout_margin="20dp"
+        android:textSize="30sp"
+        android:textColor="@color/txt_color"
+        android:background="@color/btn_color"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/summer" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/winter"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:drawableStart="@drawable/winter"
+        android:text="@string/winter"
+        android:layout_margin="20dp"
+        android:textSize="30sp"
+        android:textColor="@color/txt_color"
+        android:background="@color/btn_color"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fall" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

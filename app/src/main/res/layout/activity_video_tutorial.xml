@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".VideoTutorialActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:src="@drawable/logo"
+            android:contentDescription="@string/logo"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBaseline_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/tutorial1title"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logo"
+            android:text="How to Fish:"
+            android:gravity="center"
+            android:textColor="@color/txt_color"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/tutorial1"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:src="@drawable/tutorial1"
+            android:contentDescription="Tutorial1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tutorial1title"
+            />
+
+        <TextView
+            android:id="@+id/tutorial2title"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tutorial1"
+            android:text="Fishing Tips:"
+            android:gravity="center"
+            android:textColor="@color/txt_color"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/tutorial2"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:src="@drawable/tutorial2"
+            android:contentDescription="Tutorial2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tutorial2title"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

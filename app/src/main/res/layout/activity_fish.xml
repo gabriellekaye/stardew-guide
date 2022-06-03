@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".FishActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo"
+            android:contentDescription="@string/logo"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBaseline_toTopOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/fishimg"
+            android:layout_width="110dp"
+            android:layout_height="150dp"
+            android:contentDescription="@string/logo"
+            android:layout_marginStart="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/name"
+            app:layout_constraintTop_toBottomOf="@id/logo"
+            />
+
+        <TextView
+            android:id="@+id/name"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textColor="@color/txt_color"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:gravity="center"
+            android:includeFontPadding="true"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/fishimg"
+            app:layout_constraintTop_toBottomOf="@id/logo"
+            />
+
+        <TextView
+            android:id="@+id/foundint"
+            android:text="@string/foundin"
+            android:textSize="27sp"
+            android:textColor="@color/txt_color"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/foundin"
+            app:layout_constraintTop_toBottomOf="@id/name" />
+
+        <TextView
+            android:id="@+id/foundin"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/txt_color"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            app:layout_constraintLeft_toRightOf="@id/foundint"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/name" />
+
+        <TextView
+            android:id="@+id/timet"
+            android:text="@string/time"
+            android:textSize="27sp"
+            android:textColor="@color/txt_color"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/time"
+            app:layout_constraintTop_toBottomOf="@id/foundint" />
+
+        <TextView
+            android:id="@+id/time"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/txt_color"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            app:layout_constraintLeft_toRightOf="@id/timet"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/foundin" />
+
+        <TextView
+            android:id="@+id/weathert"
+            android:text="@string/weather"
+            android:textSize="27sp"
+            android:textColor="@color/txt_color"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/weather"
+            app:layout_constraintTop_toBottomOf="@id/timet" />
+
+        <TextView
+            android:id="@+id/weather"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/txt_color"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            app:layout_constraintLeft_toRightOf="@id/weathert"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/time" />
+
+        <TextView
+            android:id="@+id/sizet"
+            android:text="@string/size"
+            android:textSize="27sp"
+            android:textColor="@color/txt_color"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/size"
+            app:layout_constraintTop_toBottomOf="@id/weathert" />
+
+        <TextView
+            android:id="@+id/size"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/txt_color"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            app:layout_constraintLeft_toRightOf="@id/sizet"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/weather" />
+
+        <TextView
+            android:id="@+id/healt"
+            android:text="@string/heal"
+            android:textSize="27sp"
+            android:textColor="@color/txt_color"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/heal"
+            app:layout_constraintTop_toBottomOf="@id/sizet" />
+
+        <TextView
+            android:id="@+id/heal"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/txt_color"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            app:layout_constraintLeft_toRightOf="@id/healt"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/size" />
+
+        <TextView
+            android:id="@+id/sellt"
+            android:text="@string/sell"
+            android:textSize="27sp"
+            android:textColor="@color/txt_color"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/sell"
+            app:layout_constraintTop_toBottomOf="@id/healt" />
+
+        <TextView
+            android:id="@+id/sell"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/txt_color"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            app:layout_constraintLeft_toRightOf="@id/sellt"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/heal"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
