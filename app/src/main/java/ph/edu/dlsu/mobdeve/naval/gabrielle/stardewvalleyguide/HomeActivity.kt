@@ -30,5 +30,15 @@ class HomeActivity : AppCompatActivity() {
             var goToForageableList = Intent(this, ForageableSeasonListActivity::class.java)
             startActivity(goToForageableList)
         }
+
+        binding.festival.setOnClickListener {
+            var goToFestivalList = Intent(this, FestivalSeasonListActivity::class.java)
+            startActivity(goToFestivalList)
+        }
+
+        binding.fish.setOnClickListener {
+            var goToFishList = Intent(this, FishSeasonListActivity::class.java)
+            startActivity(goToFishList)
+        }
     }
 }

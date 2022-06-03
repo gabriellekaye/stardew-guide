@@ -126,6 +126,32 @@
             android:textSize="25sp"
             android:background="@color/btn_color" />
 
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/festival"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/forage"
+            android:text="Festivals"
+            android:layout_margin="10dp"
+            android:textColor="@color/txt_color"
+            android:textSize="25sp"
+            android:background="@color/btn_color" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/fish"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/festival"
+            android:text="Fish"
+            android:layout_margin="10dp"
+            android:textColor="@color/txt_color"
+            android:textSize="25sp"
+            android:background="@color/btn_color" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
