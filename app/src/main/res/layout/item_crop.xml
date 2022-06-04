@@ -31,7 +31,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="20dp"
-            android:textAllCaps="true"
+            android:textAllCaps="false"
+            android:textStyle="bold"
             android:textAlignment="center"
             android:textSize="23sp"
             android:maxLines="2"/>
