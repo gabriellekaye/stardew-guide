@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StardewValleyGuide">
         <activity
+            android:name=".TimerActivity"
+            android:exported="false" />
+        <activity
             android:name=".ForageableSeasonListActivity"
             android:exported="false" />
         <activity
@@ -96,7 +99,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
