@@ -6,11 +6,11 @@ import android.icu.util.Calendar
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import com.google.android.material.timepicker.MaterialTimePicker
 import com.google.android.material.timepicker.TimeFormat
-import com.google.android.material.timepicker.TimeFormat.CLOCK_12H
 import ph.edu.dlsu.mobdeve.naval.gabrielle.stardewvalleyguide.databinding.ActivityTimerBinding
 
 class TimerActivity : AppCompatActivity() {
@@ -30,57 +30,7 @@ class TimerActivity : AppCompatActivity() {
         createNotificationChannel() //creates the notification channel
 
         binding.setTimerBtn.setOnClickListener {
-//            val currTime = Calendar.getInstance()
-//            val startHour = currTime.get(Calendar.HOUR_OF_DAY)
-//            val startMin = currTime.get(Calendar.MINUTE)
-////            var picker = TimePickerDialog(this, TimePickerDialog.OnTimeSetListener { view, hourOfDay, min ->
-////                binding.currTime.setText("$hourOfDay:$min")}, startHour, startMin, false).show()
-//
-//            picker = MaterialTimePicker.Builder()
-//                .setTimeFormat(CLOCK_12H)
-//                .setHour(startHour)
-//                .setMinute(startMin)
-//                .setTitleText("Set Alarm Time")
-//                .build()
-//
-//            picker.show(supportFragmentManager,"Chanel")
-//
-//            picker.addOnPositiveButtonClickListener {
-//                if(picker.hour > 12){
-//                    binding.currTime.text =
-//                        String.format("%02d", picker.hour - 12) + " : " +
-//                                String.format("%02d", picker.minute) + "PM"
-//                }
-//                else{
-//                    binding.currTime.text =
-//                    String.format("%02d", picker.hour) + " : " +
-//                            String.format("0.2d", picker.minute) + "AM"
-//                }
-//            }
-//
-//            calendar = Calendar.getInstance()
-//            calendar[Calendar.HOUR_OF_DAY] = picker.hour
-//            calendar[Calendar.MINUTE] = picker.minute
-//            calendar[Calendar.SECOND] = 0
-//            calendar[Calendar.MILLISECOND] = 0
             openTimePicker()
-        }
-
-        binding.startTimerBtn.setOnClickListener {
-
-            alarmManager = getSystemService(ALARM_SERVICE) as AlarmManager
-
-            val intent = Intent(this, AlarmBroadcast::class.java)
-
-            pendingIntent = PendingIntent.getBroadcast(this, 0, intent, 0)
-
-            alarmManager.set(
-                AlarmManager.RTC_WAKEUP, //will wake up phone
-                calendar.timeInMillis,   //will trigger at the time picked
-                pendingIntent
-            )
-
-            Toast.makeText(this, "Alarm is set!", Toast.LENGTH_SHORT).show()
         }
 
         binding.cancelTimerBtn.setOnClickListener {
@@ -96,10 +46,11 @@ class TimerActivity : AppCompatActivity() {
         }
     }
 
+    @RequiresApi(Build.VERSION_CODES.N)
     private fun openTimePicker() {
         val clockFormat = TimeFormat.CLOCK_12H
 
-        val picker = MaterialTimePicker.Builder()
+        picker = MaterialTimePicker.Builder()
             .setTimeFormat(clockFormat)
             .setHour(12)
             .setMinute(0)
@@ -108,20 +59,45 @@ class TimerActivity : AppCompatActivity() {
 
         picker.show(supportFragmentManager, "Chanel")
 
-        //triggers when ok is pressed
+        //ok btn
         picker.addOnPositiveButtonClickListener {
             val hour = picker.hour
             val min = picker.minute
-//            calendar[Calendar.HOUR_OF_DAY] = picker.hour
-//            calendar[Calendar.MINUTE] = picker.minute
-//            calendar[Calendar.SECOND] = 0
-//            calendar[Calendar.MILLISECOND] = 0
 
+            calendar = Calendar.getInstance()
+            calendar[Calendar.HOUR_OF_DAY] = hour
+            calendar[Calendar.MINUTE] = min
+            calendar[Calendar.SECOND] = 0
+            calendar[Calendar.MILLISECOND] = 0
+
+            Log.d("tag", "Positive listener")
+
+            alarmManager = getSystemService(ALARM_SERVICE) as AlarmManager
+
+            val intent = Intent(this, AlarmBroadcast::class.java)
+
+            pendingIntent = PendingIntent.getBroadcast(applicationContext, 0, intent, 0)
+
+            alarmManager.set(
+                AlarmManager.RTC_WAKEUP, //will wake up phone
+                calendar.timeInMillis,   //will trigger at the time picked
+                pendingIntent
+            )
+
+            Toast.makeText(this, "Alarm set for $hour : $min!", Toast.LENGTH_SHORT).show()
         }
 
-        // triggers when cancel is pressed
-        picker.addOnNegativeButtonClickListener {
+        // triggered when clicked out of time picker
+        picker.addOnCancelListener {
+            Log.d("tag", "Cancel listener")
+            Toast.makeText(this, "Alarm dismissed!", Toast.LENGTH_SHORT).show()
+        }
 
+        // cancel btn
+        picker.addOnNegativeButtonClickListener {
+            Log.d("tag", "Negative listener")
+
+            Toast.makeText(this, "Alarm cancelled!", Toast.LENGTH_SHORT).show()
         }
     }
 

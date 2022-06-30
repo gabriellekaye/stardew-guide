@@ -17,7 +17,7 @@ class AlarmBroadcast : BroadcastReceiver() {
         val notification = NotificationCompat.Builder(context!!,"Chanel")
             .setSmallIcon(R.drawable.player)
             .setContentTitle("Harvest your crops!")
-            .setAutoCancel(false)
+            .setAutoCancel(true)
             .setDefaults(NotificationCompat.DEFAULT_ALL)
             .setPriority(NotificationCompat.PRIORITY_HIGH)
             .setContentIntent(pendingIntent)
