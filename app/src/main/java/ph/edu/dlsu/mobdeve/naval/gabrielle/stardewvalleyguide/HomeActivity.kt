@@ -3,15 +3,13 @@ package ph.edu.dlsu.mobdeve.naval.gabrielle.stardewvalleyguide
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.MenuItem
-import android.widget.ImageView
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.google.android.material.navigation.NavigationView
 import ph.edu.dlsu.mobdeve.naval.gabrielle.stardewvalleyguide.databinding.ActivityHomeBinding
 
 class HomeActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivityHomeBinding
+
     private val bottomNavBar = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
             R.id.events -> {
@@ -53,10 +51,14 @@ class HomeActivity : AppCompatActivity() {
 //            finish()
         }
 
-
         binding.btnTutorials.setOnClickListener {
             var goToTutorial = Intent(this, VideoTutorialActivity::class.java)
             startActivity(goToTutorial)
+        }
+
+        binding.timerBtn.setOnClickListener {
+            var goToTimer = Intent(this, TimerActivity::class.java)
+            startActivity(goToTimer)
         }
 
         binding.bnvNavbar.itemIconTintList = null
