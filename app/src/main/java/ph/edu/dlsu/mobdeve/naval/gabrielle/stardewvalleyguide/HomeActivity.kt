@@ -61,11 +61,6 @@ class HomeActivity : AppCompatActivity() {
             startActivity(goToTimer)
         }
 
-        binding.btnPosts.setOnClickListener {
-            var goToForum = Intent(this, ForumActivity::class.java)
-            startActivity(goToForum)
-        }
-
         binding.bnvNavbar.itemIconTintList = null
 
         var navbar = findViewById<BottomNavigationView>(R.id.bnv_navbar)
