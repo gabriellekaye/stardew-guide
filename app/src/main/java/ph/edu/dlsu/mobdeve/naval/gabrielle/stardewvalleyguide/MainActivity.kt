@@ -54,7 +54,6 @@ class MainActivity : AppCompatActivity() {
                         var goToHome = Intent(this, HomeActivity::class.java)
 
                         storagePreferences.saveStringPreferences("username", it.child("username").value.toString())
-                        storagePreferences.saveStringPreferences("name", it.child("name").value.toString())
                         startActivity(goToHome)
                         finish()
                     }
