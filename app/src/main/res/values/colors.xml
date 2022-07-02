@@ -10,4 +10,6 @@
     <color name="btn_color">#E1BB5A</color>
     <color name="txt_color">#654900</color>
     <color name="background_color">#FFDA7B</color>
+    <color name="post_color">#FAECC9</color>
+    <color name="date_color">#9E957F</color>
 </resources>
