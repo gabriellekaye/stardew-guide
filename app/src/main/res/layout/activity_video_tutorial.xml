@@ -8,10 +8,17 @@
     android:background="@color/background_color"
     tools:context=".VideoTutorialActivity">
 
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_marginHorizontal="10dp">-->
+<!--    </LinearLayout>-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="50dp">
+        android:paddingBottom="50dp"
+        android:layout_marginHorizontal="10dp">
 
         <ImageView
             android:id="@+id/logo"
@@ -25,49 +32,57 @@
             />
 
         <TextView
-            android:id="@+id/tutorial1title"
+            android:id="@+id/tv_tutorials"
             android:layout_width="300dp"
-            android:layout_height="50dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:text="Tutorials"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/txt_color"
+            android:textSize="25sp"
             app:layout_constraintTop_toBottomOf="@id/logo"
-            android:text="How to Fish:"
-            android:gravity="center"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+        <com.google.android.youtube.player.YouTubePlayerView
+            android:id="@+id/ytp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_tutorials"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_play1"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/ytp1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="Play Video"
             android:textColor="@color/txt_color"
-            android:textSize="30sp" />
+            android:background="@color/btn_color"/>
 
-        <ImageView
-            android:id="@+id/tutorial1"
-            android:layout_width="300dp"
-            android:layout_height="200dp"
-            android:src="@drawable/tutorial1"
-            android:contentDescription="Tutorial1"
+        <com.google.android.youtube.player.YouTubePlayerView
+            android:id="@+id/ytp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/btn_play1"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tutorial1title"
-            />
+            android:layout_marginTop="15dp"/>
 
-        <TextView
-            android:id="@+id/tutorial2title"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_play2"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/ytp2"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tutorial1"
-            android:text="Fishing Tips:"
-            android:gravity="center"
+            android:text="Play Video"
             android:textColor="@color/txt_color"
-            android:textSize="30sp" />
-
-        <ImageView
-            android:id="@+id/tutorial2"
-            android:layout_width="300dp"
-            android:layout_height="200dp"
-            android:src="@drawable/tutorial2"
-            android:contentDescription="Tutorial2"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tutorial2title"
-            />
+            android:background="@color/btn_color"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
